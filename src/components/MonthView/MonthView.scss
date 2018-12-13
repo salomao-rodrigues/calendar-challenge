@@ -1,0 +1,25 @@
+$header-height: 32px;
+
+.month-container {
+  background-color: #888;
+  display: grid;
+  flex-grow: 1;
+  padding: 12px;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: $header-height repeat(6, auto);
+  grid-gap: 4px;
+}
+
+.day {
+  background-color: #eee;
+
+  &--offset {
+    background-color: #bbb;
+  }
+}
+
+.month-header {
+  background-color: #ccc;
+  line-height: $header-height;
+  text-align: center;
+}
