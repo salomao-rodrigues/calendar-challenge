@@ -1,0 +1,17 @@
+.month-container {
+  background-color: #aaa;
+  display: grid;
+  flex-grow: 1;
+  padding: 12px;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: 32px repeat(5, auto);
+  grid-gap: 4px;
+}
+
+.month-item {
+  background-color: #eee;
+}
+
+.month-header {
+  background-color: #ccc;
+}

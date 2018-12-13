@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
+import MonthView from './components/MonthView';
+
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <header>
           <h1>
             React Redux Calendar
           </h1>
         </header>
-      </div>
+        <main>
+          <MonthView />
+        </main>
+      </Fragment>
     );
   }
 }
