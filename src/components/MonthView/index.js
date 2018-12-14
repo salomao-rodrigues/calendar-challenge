@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import './MonthView.scss';
 
@@ -9,7 +10,7 @@ const daysInMonth = (month, year) => {
 
 const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const MonthView = ({ date = new Date() }) => {
+export const MonthView = ({ date = new Date(), reminders = [] }) => {
   const year = date.getFullYear();
   const month = date.getMonth();
 
@@ -47,4 +48,4 @@ MonthView.propTypes = {
   date: PropTypes.instanceOf(Date)
 };
 
-export default MonthView;
+export default connect(reminders => ({ reminders }))(MonthView);

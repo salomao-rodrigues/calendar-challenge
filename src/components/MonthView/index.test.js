@@ -1,5 +1,5 @@
 import React from 'react';
-import MonthView from './';
+import { MonthView } from './';
 import { shallow } from 'enzyme';
 
 const testCases = [

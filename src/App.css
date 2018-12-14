@@ -2,3 +2,7 @@ main {
   flex-grow: 1;
   display: flex;
 }
+
+header h1 {
+  text-align: center;
+}
