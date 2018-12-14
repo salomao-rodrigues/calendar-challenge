@@ -1776,6 +1776,11 @@ binary-extensions@^1.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.12.0.tgz#c2d780f53d45bba8317a8902d4ceeaf3a6385b14"
   integrity sha512-DYWGk01lDcxeS/K9IHPGWfT8PsJmbXRtRd2Sx72Tnb8pcYZQFF1oSDb8hJtS1vhp212q1Rzi5dUf9+nq0o9UIg==
 
+binary-search-insert@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/binary-search-insert/-/binary-search-insert-1.0.3.tgz#0dc3d7b253d2e6f466441b12f7ae543267bf5cf6"
+  integrity sha1-DcPXslPS5vRmRBsS965UMme/XPY=
+
 block-stream@*:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
