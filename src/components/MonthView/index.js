@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './MonthView.scss';
 
@@ -40,6 +41,10 @@ const MonthView = ({ date = new Date(2022, 5) }) => {
       ))}
     </div>
   );
+};
+
+MonthView.propTypes = {
+  date: PropTypes.instanceOf(Date)
 };
 
 export default MonthView;
