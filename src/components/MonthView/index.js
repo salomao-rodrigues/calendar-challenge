@@ -9,7 +9,7 @@ const daysInMonth = (month, year) => {
 
 const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const MonthView = ({ date = new Date(2022, 5) }) => {
+const MonthView = ({ date = new Date() }) => {
   const year = date.getFullYear();
   const month = date.getMonth();
 
