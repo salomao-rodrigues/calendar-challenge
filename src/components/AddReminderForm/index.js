@@ -50,6 +50,7 @@ export class AddReminderForm extends React.Component {
         </div>
         <div>
           <DateTimePicker
+            locale="en-GB"
             onChange={this.onDateChangeHandler}
             value={this.state.date}
             required={true}

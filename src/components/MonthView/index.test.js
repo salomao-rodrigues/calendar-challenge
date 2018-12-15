@@ -64,17 +64,23 @@ describe('MonthView', () => {
   });
 
   describe('when clicking on a day slot', () => {
-    it('should trigger the Add Reminder modal to open', () => {
+    it('should trigger the Add Reminder modal to open with the right day selected', () => {
       const openModal = jest.fn();
-      const wrapper = shallow(<MonthView openModal={openModal} />);
+      const date = new Date();
+      const dayClicked = 6;
+      const wrapper = shallow(<MonthView date={date} openModal={openModal} />);
+      const expectedDate = new Date(date.getTime());
+      expectedDate.setDate(dayClicked);
 
       expect(openModal).not.toHaveBeenCalled();
 
       wrapper
         .find('.day:not(.day--offset)')
-        .at(0)
+        .at(dayClicked - 1)
         .simulate('click');
+
       expect(openModal).toHaveBeenCalled();
+      expect(wrapper.find(AddReminderForm).prop('date')).toEqual(expectedDate);
     });
   });
 
