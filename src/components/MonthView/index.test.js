@@ -1,6 +1,8 @@
 import React from 'react';
-import { MonthView } from './';
+import AddReminderForm from '../AddReminderForm';
 import { shallow } from 'enzyme';
+
+import { MonthView } from './';
 
 const testCases = [
   {
@@ -59,5 +61,31 @@ describe('MonthView', () => {
         expect(wrapper.find('.day').length / 7).toBe(rows);
       }
     });
+  });
+
+  describe('when clicking on a day slot', () => {
+    it('should trigger the Add Reminder modal to open', () => {
+      const openModal = jest.fn();
+      const wrapper = shallow(<MonthView openModal={openModal} />);
+
+      expect(openModal).not.toHaveBeenCalled();
+
+      wrapper
+        .find('.day:not(.day--offset)')
+        .at(0)
+        .simulate('click');
+      expect(openModal).toHaveBeenCalled();
+    });
+  });
+
+  it.skip('should display reminders in the correct day slot', () => {
+    const date = new Date(2018, 11);
+    const reminders = [
+      {
+        date: new Date(2018, 11, 5, 7, 30, 0),
+        title: 'Plan the day'
+      }
+    ];
+    const wrapper = shallow(<MonthView date={date} reminders={reminders} />);
   });
 });
