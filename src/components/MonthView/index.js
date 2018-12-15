@@ -19,6 +19,8 @@ const modalStyle = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
+    minHeight: 400,
+    minWidth: 400,
     transform: 'translate(-50%, -50%)'
   }
 };
