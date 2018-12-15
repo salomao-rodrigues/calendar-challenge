@@ -23,6 +23,27 @@ const modalStyle = {
   }
 };
 
+const mapRemindersToDays = (reminders, date) => {
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const firstDay = new Date(year, month, 1);
+  const totalDays = daysInMonth(month, year);
+  const lastDay = new Date(year, month, totalDays);
+
+  return reminders.reduce((remindersPerDay, reminder) => {
+    const reminderTime = reminder.date.getTime();
+    if (reminderTime >= firstDay && reminderTime <= lastDay) {
+      if (remindersPerDay[reminder.date.getDate()]) {
+        remindersPerDay[reminder.date.getDate()].push(reminder);
+      } else {
+        remindersPerDay[reminder.date.getDate()] = [reminder];
+      }
+    }
+
+    return remindersPerDay;
+  }, {});
+};
+
 const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export class MonthView extends React.Component {
@@ -50,6 +71,7 @@ export class MonthView extends React.Component {
     const startOffset = new Date(year, month, 1).getDay();
     const endOffset = 7 - ((startOffset + totalDays) % 7);
     const numRows = (totalDays + startOffset + endOffset) / 7;
+    const mappedReminders = mapRemindersToDays(reminders, selectedDate);
 
     return (
       <div
@@ -71,6 +93,10 @@ export class MonthView extends React.Component {
             onClick={() => this.onDateClickHandler(index + 1)}
           >
             {index + 1}
+            {mappedReminders[index + 1] &&
+              mappedReminders[index + 1].map(({ title }, key) => (
+                <div key={`${key}+${index}`}>{title}</div>
+              ))}
           </div>
         ))}
         {new Array(endOffset).fill().map((val, index) => (
