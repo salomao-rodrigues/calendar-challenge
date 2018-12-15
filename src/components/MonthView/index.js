@@ -12,6 +12,17 @@ const daysInMonth = (month, year) => {
   return new Date(year, month + 1, 0).getDate();
 };
 
+const modalStyle = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
+
 const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export const MonthView = ({
@@ -54,8 +65,12 @@ export const MonthView = ({
       {new Array(endOffset).fill().map((val, index) => (
         <div key={`end-offset-${index}`} className="day day--offset" />
       ))}
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <AddReminderForm />
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={modalStyle}
+      >
+        <AddReminderForm afterSubmit={closeModal} />
       </Modal>
     </div>
   );

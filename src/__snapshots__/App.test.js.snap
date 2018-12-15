@@ -20,7 +20,7 @@ ShallowWrapper {
       "children": Array [
         <header>
           <h1>
-            React Redux Calendar
+            React Redux Calendar Challenge
           </h1>
         </header>,
         <main>
@@ -36,7 +36,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <h1>
-            React Redux Calendar
+            React Redux Calendar Challenge
           </h1>,
         },
         "ref": null,
@@ -45,10 +45,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "React Redux Calendar",
+            "children": "React Redux Calendar Challenge",
           },
           "ref": null,
-          "rendered": "React Redux Calendar",
+          "rendered": "React Redux Calendar Challenge",
           "type": "h1",
         },
         "type": "header",
@@ -84,7 +84,7 @@ ShallowWrapper {
         "children": Array [
           <header>
             <h1>
-              React Redux Calendar
+              React Redux Calendar Challenge
             </h1>
           </header>,
           <main>
@@ -100,7 +100,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <h1>
-              React Redux Calendar
+              React Redux Calendar Challenge
             </h1>,
           },
           "ref": null,
@@ -109,10 +109,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "React Redux Calendar",
+              "children": "React Redux Calendar Challenge",
             },
             "ref": null,
-            "rendered": "React Redux Calendar",
+            "rendered": "React Redux Calendar Challenge",
             "type": "h1",
           },
           "type": "header",

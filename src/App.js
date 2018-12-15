@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <Fragment>
         <header>
-          <h1>
-            React Redux Calendar
-          </h1>
+          <h1>React Redux Calendar Challenge</h1>
         </header>
         <main>
           <MonthView />
