@@ -5,10 +5,10 @@
   "license": "MIT",
   "author": "Salomao Rodrigues <salomao88@gmail.com>",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/salomao-rodrigues/calendar-challenge.git"
+    "type": "git",
+    "url": "https://github.com/salomao-rodrigues/calendar-challenge.git"
   },
-  "homepage": "https://github.com/salomao-rodrigues/calendar-challenge.git",
+  "homepage": "http://www.salomao.me/calendar-challenge",
   "dependencies": {
     "binary-search-insert": "^1.0.3",
     "react": "^16.6.3",
