@@ -5,8 +5,8 @@ $header-height: 32px;
   display: grid;
   flex-grow: 1;
   padding: 12px;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: $header-height repeat(6, auto);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: $header-height repeat(6, 1fr);
   grid-gap: 4px;
 }
 

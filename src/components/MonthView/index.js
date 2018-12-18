@@ -78,7 +78,7 @@ export class MonthView extends React.Component {
     return (
       <div
         className="month-container"
-        style={{ gridTemplateRows: `32px repeat(${numRows}, auto)` }}
+        style={{ gridTemplateRows: `32px repeat(${numRows}, 1fr)` }}
       >
         {WEEK_DAYS.map(day => (
           <div key={day} className="month-header">
