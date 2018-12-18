@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/salomao-rodrigues/calendar-challenge.git/precache-manifest.1ec3f818cef6618236f2d9bc0da394fe.js"
+  "/calendar-challenge/precache-manifest.0b316380ed7d8973c40c82c0b6877f50.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/salomao-rodrigues/calendar-challenge.git/index.html", {
+workbox.routing.registerNavigationRoute("/calendar-challenge/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

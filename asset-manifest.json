@@ -1,15 +1,15 @@
 {
-  "main.css": "/salomao-rodrigues/calendar-challenge.git/static/css/main.24b80909.chunk.css",
-  "main.js": "/salomao-rodrigues/calendar-challenge.git/static/js/main.3052a654.chunk.js",
-  "main.js.map": "/salomao-rodrigues/calendar-challenge.git/static/js/main.3052a654.chunk.js.map",
-  "static/css/1.4f0b4194.chunk.css": "/salomao-rodrigues/calendar-challenge.git/static/css/1.4f0b4194.chunk.css",
-  "static/js/1.e3e0006b.chunk.js": "/salomao-rodrigues/calendar-challenge.git/static/js/1.e3e0006b.chunk.js",
-  "static/js/1.e3e0006b.chunk.js.map": "/salomao-rodrigues/calendar-challenge.git/static/js/1.e3e0006b.chunk.js.map",
-  "runtime~main.js": "/salomao-rodrigues/calendar-challenge.git/static/js/runtime~main.ebad5048.js",
-  "runtime~main.js.map": "/salomao-rodrigues/calendar-challenge.git/static/js/runtime~main.ebad5048.js.map",
-  "static/css/1.4f0b4194.chunk.css.map": "/salomao-rodrigues/calendar-challenge.git/static/css/1.4f0b4194.chunk.css.map",
-  "static/css/main.24b80909.chunk.css.map": "/salomao-rodrigues/calendar-challenge.git/static/css/main.24b80909.chunk.css.map",
-  "index.html": "/salomao-rodrigues/calendar-challenge.git/index.html",
-  "precache-manifest.1ec3f818cef6618236f2d9bc0da394fe.js": "/salomao-rodrigues/calendar-challenge.git/precache-manifest.1ec3f818cef6618236f2d9bc0da394fe.js",
-  "service-worker.js": "/salomao-rodrigues/calendar-challenge.git/service-worker.js"
+  "main.css": "/calendar-challenge/static/css/main.24b80909.chunk.css",
+  "main.js": "/calendar-challenge/static/js/main.a969b2fa.chunk.js",
+  "main.js.map": "/calendar-challenge/static/js/main.a969b2fa.chunk.js.map",
+  "static/css/1.4f0b4194.chunk.css": "/calendar-challenge/static/css/1.4f0b4194.chunk.css",
+  "static/js/1.e3e0006b.chunk.js": "/calendar-challenge/static/js/1.e3e0006b.chunk.js",
+  "static/js/1.e3e0006b.chunk.js.map": "/calendar-challenge/static/js/1.e3e0006b.chunk.js.map",
+  "runtime~main.js": "/calendar-challenge/static/js/runtime~main.2d0aae2d.js",
+  "runtime~main.js.map": "/calendar-challenge/static/js/runtime~main.2d0aae2d.js.map",
+  "static/css/1.4f0b4194.chunk.css.map": "/calendar-challenge/static/css/1.4f0b4194.chunk.css.map",
+  "static/css/main.24b80909.chunk.css.map": "/calendar-challenge/static/css/main.24b80909.chunk.css.map",
+  "index.html": "/calendar-challenge/index.html",
+  "precache-manifest.0b316380ed7d8973c40c82c0b6877f50.js": "/calendar-challenge/precache-manifest.0b316380ed7d8973c40c82c0b6877f50.js",
+  "service-worker.js": "/calendar-challenge/service-worker.js"
 }
